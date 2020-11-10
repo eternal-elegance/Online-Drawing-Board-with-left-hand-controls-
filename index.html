@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Drawing Board</title>
+</head>
+<body>
+  <div id="canv">
+    <canvas id="canvas" height="600" width="800"></canvas>
+  </div>
+</body>
+<script src="script.js"></script>
+
+<!-- Include the PubNub Library -->
+<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+ 
+<!-- Instantiate PubNub -->
+<script type="text/javascript">
+ 
+  var PUBNUB_demo = PUBNUB.init({
+    publish_key: 'pub-c-275ea3b2-4801-4f93-a9eb-605601baf9ad',
+    subscribe_key: 'sub-c-dd215de4-22a5-11eb-af2a-72ba4a3d8762'
+  });
+  
+</script>
+
+</html>

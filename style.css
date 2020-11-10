@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#canvas{
+  border: 2px solid #fbff05;
+  border-radius: 20px;
+  background-color: black;
+  margin-top: 10px;
+}
+#canv{
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(0,0,0,1) 63%, rgba(255,255,255,1) 95%); 
+  height:100vh;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
