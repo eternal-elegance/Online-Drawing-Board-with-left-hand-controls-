@@ -7,9 +7,25 @@
   <title>Drawing Board</title>
 </head>
 <body>
-  <div id="canv">
-    <canvas id="canvas" height="600" width="800"></canvas>
+  <div id=container>
+    <div id="nav">
+      <ul>
+        <li><button class="btn" id="plusB" title="+ line width">+</button></li>
+        <li><button class="btn" id="minusB" title="- line width">-</button></li>
+        <li><button class="btn" id="blueB" title="Blue color">B</button></li>
+        <li><button class="btn" id="blueG" title="Green color">G</button></li>
+        <li><button class="btn" id="blueR" title="Red color">R</button></li>
+        <li><button class="btn" id="clear" title="Clear all">C</button></li>
+        <li><a href="#" type="button"  id="save" href=""><img src="https://img.icons8.com/nolan/64/save.png" width="20px" height="20px" id="img" title="save"/></a></li>
+      </ul>
+
+
+    </div>
+    <div id="canv">
+      <canvas id="canvas" height="600" width="800"></canvas>
+    </div>
   </div>
+
 </body>
 <script src="script.js"></script>
 
@@ -25,5 +41,7 @@
   });
   
 </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 </html>

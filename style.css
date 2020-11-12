@@ -1,23 +1,112 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-#canvas{
-  border: 2px solid #fbff05;
+body {
+  -webkit-touch-callout: none;
+
+  -webkit-user-select: none;
+
+  -moz-user-select: none;
+
+  user-select: none;
+}
+
+#canvas {
+  border: 5px solid #fbff05;
   border-radius: 20px;
   background-color: black;
   margin-top: 10px;
+  /* height: 600px;
+  width: 800px; */
+  cursor: url("cursors/Yellow.cur") ,pointer;
 }
-#canv{
+
+#container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 1) 63%, rgba(255, 255, 255, 1) 95%);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn{
+  background: none;
+  border: none;
+  /* border: 1px solid yellow; */
+  color: yellow;
+  border-radius: 10px;
+  padding: 1px;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.btn:hover{
+  background-color: #fbff05;
+  color:black;
+  transition: 0.5s ease;
+}
+
+#blueB{
+  color:rgb(2, 236, 253);
+}
+#blueG{
+  color:rgb(12, 240, 12);
+}
+#blueR{
+  color:rgb(255, 0, 0);
+}
+
+#blueB:hover{
+  background-color: rgb(2, 236, 253);
+  color:black;
+  transition: 0.5 ease-in-out;
+}
+#blueG:hover{
+  background-color: rgb(12, 240, 12);
+  color:black;
+  transition: 0.5 ease-in-out;
+}
+#blueR:hover{
+  background-color: rgb(255, 0, 0);
+  color:white;
+  transition: 0.5 ease-in-out;
+}
+
+#nav{
+  margin-right: 5px;
   display:flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(0,0,0,1) 63%, rgba(255,255,255,1) 95%); 
-  height:100vh;
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
+  border: 2px solid yellow;
+  padding: 5px;
 }
+#nav ul li{
+  list-style: none;
+  margin-top: 5px;
+  align-self: center;
+}
+
+#clear{
+  font-size: 0.8rem;
+  color: white;
+}
+#clear:hover{
+  background-color: white;
+  color:black;
+  transition: 0.5s ease;
+}
+#save img{
+  background-color: black;
+  padding: 2px;
+}
+
+@media (max-width:500px) {}
