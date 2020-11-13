@@ -30,15 +30,18 @@
 <script src="script.js"></script>
 
 <!-- Include the PubNub Library -->
-<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+<script src="https://cdn.pubnub.com/pubnub-3.15.2.min.js"></script>
  
-<!-- Instantiate PubNub -->
+<!-- Instantiate PubNub and initialize -->
 <script type="text/javascript">
  
-  var PUBNUB_demo = PUBNUB.init({
+ var channel = 'my-draw-demo';
+
+var pubnub = PUBNUB.init({
     publish_key: 'pub-c-275ea3b2-4801-4f93-a9eb-605601baf9ad',
-    subscribe_key: 'sub-c-dd215de4-22a5-11eb-af2a-72ba4a3d8762'
-  });
+    subscribe_key: 'sub-c-dd215de4-22a5-11eb-af2a-72ba4a3d8762',
+    ssl: true
+});
   
 </script>
 

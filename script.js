@@ -83,8 +83,30 @@ window.addEventListener("load", () => {
   const endDraw = (event) => {
     isActive = false;
 
+    /* sending data to pnub */
+    pubnub.publish({
+      channel: channel,
+      message: { 
+        plots: plots // your array goes here
+      } 
+    });
+    
     plots = [];
   }
+
+  /* TO GET OTHER USERS DATA FROM THE STREAM */
+  pubnub.subscribe({
+    channel: channel,
+    callback: drawFromStream
+});
+
+/* THIS IS A CALLBACK FUNCTION TO DRAW THE GOT DATA */
+function drawFromStream(message) {
+  if(!message) return;        
+
+  ctx.beginPath();
+  drawOnCanvas(message.plots);
+}
 
   const mouseOut = (e) => {
     isActive = false;
