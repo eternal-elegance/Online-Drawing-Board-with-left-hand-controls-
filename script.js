@@ -105,7 +105,7 @@ function drawFromStream(message) {
   if(!message) return;        
 
   ctx.beginPath();
-  drawOnCanvas(message.plots);
+  drawOnCanvas(color,message.plots);
 }
 
   const mouseOut = (e) => {
