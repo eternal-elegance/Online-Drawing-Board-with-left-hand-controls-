@@ -87,8 +87,9 @@ window.addEventListener("load", () => {
     pubnub.publish({
       channel: channel,
       message: { 
-        plots: plots // your array goes here
-      } 
+        plots: plots, // your array goes here
+        color:color
+      }
     });
     
     plots = [];
@@ -105,7 +106,7 @@ function drawFromStream(message) {
   if(!message) return;        
 
   ctx.beginPath();
-  drawOnCanvas(color,message.plots);
+  drawOnCanvas(message.color,message.plots);
 }
 
   const mouseOut = (e) => {
