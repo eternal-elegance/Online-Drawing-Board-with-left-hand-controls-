@@ -89,7 +89,7 @@ window.addEventListener("load", () => {
       message: { 
         plots: plots, // your array goes here
         color:color
-      }
+      },
     });
     
     plots = [];
@@ -98,7 +98,10 @@ window.addEventListener("load", () => {
   /* TO GET OTHER USERS DATA FROM THE STREAM */
   pubnub.subscribe({
     channel: channel,
-    callback: drawFromStream
+    callback: drawFromStream,
+    presence: function(m){
+      document.getElementById('occupancy').textContent = m.occupancy;
+   }
 });
 
 /* THIS IS A CALLBACK FUNCTION TO DRAW THE GOT DATA */

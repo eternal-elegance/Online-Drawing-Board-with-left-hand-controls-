@@ -109,4 +109,16 @@ body {
   padding: 2px;
 }
 
+
+/* Element | http://127.0.0.1:5501/index.html */
+
+#occupancy {
+  border: 2px solid yellow;
+  padding: 6px 10px 6px 10px;
+  margin-left: 6px;
+  border-radius: 3px;
+  color:white;
+}
+
+
 @media (max-width:500px) {}
