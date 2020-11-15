@@ -14,10 +14,10 @@ body {
 }
 
 #canvas {
-  border: 5px solid #fbff05;
+  border: 3px solid #fbff05;
   border-radius: 20px;
   background-color: black;
-  margin-top: 10px;
+  margin-top: 5px;
   /* height: 600px;
   width: 800px; */
   cursor: url("cursors/Yellow.cur") ,pointer;
@@ -30,11 +30,67 @@ body {
   justify-content: center;
   background: rgb(255, 255, 255);
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 1) 63%, rgba(255, 255, 255, 1) 95%);
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+#super-container{
+  height: auto;
+  width: auto;
+}
+
+
+/* Element | http://127.0.0.1:5501/index.html */
+
+#footer {
+  padding: 4px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+/* Element | http://127.0.0.1:5501/index.html */
+
+#footer > h4:nth-child(1) {
+  margin: 0px 10px 0px 10px;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 1);
+  color: white;
+  padding: 6px;
+  border-top: 2px solid yellow;
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+  font-style: italic;
+}
+
+#header{
+  padding: 4px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#header > h3:nth-child(1) {
+  margin: 0px 10px 0px 10px;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 1);
+  color: white;
+  padding: 4px;
+  border-bottom: 2px solid yellow;
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+  font-style: italic;
+}
+
+
 
 .btn{
   background: none;
@@ -88,6 +144,7 @@ body {
   justify-content: center;
   border: 2px solid yellow;
   padding: 5px;
+  background-color: black;
 }
 #nav ul li{
   list-style: none;
@@ -118,6 +175,7 @@ body {
   margin-left: 6px;
   border-radius: 3px;
   color:white;
+  background-color: black;
 }
 
 
